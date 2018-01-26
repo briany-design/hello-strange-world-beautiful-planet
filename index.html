@@ -1,0 +1,155 @@
+<!DOCTYPE = html>
+<html lang="en">
+<head>
+    <title>title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <style>
+        /* Base Styles -------------------- */  
+        * {
+            box-sizing: border-box;
+        }
+        html {
+            -webkit-text-size-adjust: 100%;
+        }
+        body {
+            color: #666;
+            background-color: #222;
+            margin: 0;
+            font: lighter 1.2em/1.5 "Lucida Sans Typewriter", "Lucida Typewriter", "monaco", monospace;
+            letter-spacing: .4px;
+            height: 100%;
+            align-items: center;
+            overflow: hidden
+            
+        }
+        header {
+            background-color: lightblue;
+        }
+        nav {
+            background-color: pink;
+            display: block;
+            margin: auto;
+        }
+        ul li {
+            display: inline-block;
+        }
+        main {   
+            width: 58%;
+            margin: auto;        
+        }
+        footer {
+            position:fixed;
+            bottom:0;
+            width:100%;
+            display:block;
+        }
+        /* Main Styles --------------------- */
+
+        .hello {
+            animation: type 4s steps(60, end); 
+        }
+        .cursor {
+            width: 6px;
+            height: 20px;
+            animation: blink 1.2s 2.2s infinite;
+            animation-fill-mode: forwards;
+            display: inline-block;
+            margin: 0px 0px -2px 12px;
+        }
+        @keyframes blink {
+            from {opacity: .0;}
+            to {
+                background-color: #ccc;
+                opacity: 1;}
+        }
+        .copyright {
+            color: #333;
+            font-size: .8rem;
+            text-align: right;
+            width: 98%;
+        }
+
+
+        /* Pseudo-classes ------------------ */
+        a:link {
+        color: rgb(255, 169, 73);
+        text-decoration: none;
+        }
+        a:visited {
+        color: lightblue;
+        }
+        a:hover {
+        color: rgba(255, 169, 73, .4);
+        }
+        a:active {
+        color: lightcoral;
+        }
+
+
+        /* Media Queries -------------------- */
+        @media (max-width: 960px) {
+            body {
+                background: #262626;
+            }
+            p {
+                color:;
+            }
+        }
+        @media (min-width: 481px) and (max-width: 700px) {
+            body {
+                background: #2a2a2a;
+        }
+            p {
+                color:;
+            }
+        }
+        @media (max-width: 480px) {
+            body {
+                background: #2e2e2e;
+            }
+            p {
+                color:;
+            }
+        }
+
+    </style>
+</head>
+
+
+
+<body>
+    <!-- Start wrapper -->
+    <div>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#"></a></li>
+                </ul>
+            </nav>
+            
+        </header>
+        
+        <main>
+            <p class="hello">Hello strange world, beautiful planet<span class="cursor"></span></p>
+        </main>
+
+
+    <!--     
+        <aside>
+            <p>side</p>
+        </aside>
+    -->    
+
+    
+        <footer>
+            <p class="copyright">&copy; edgœasis 2018. All rights reserved.</p>
+        </footer>
+       
+
+    <!-- End wrapper -->
+</body>
+</html>
+
+
